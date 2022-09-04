@@ -5,18 +5,14 @@ using UnityEngine;
 
 public class BolitaCayendo : MonoBehaviour
 {
+    [SerializeField] Camera camara;
 
     private MyVector2D position;
 
     [SerializeField] private MyVector2D velocity;
     [SerializeField] private MyVector2D acceleration;
 
-
-    [Header("World")]
-    [SerializeField] private Camera camara;
     [SerializeField] private Transform blackHole;
-
-
 
     void Start()
     {
